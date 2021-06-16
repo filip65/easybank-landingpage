@@ -19,13 +19,19 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+  transition: 1s all;
+  position: absolute;
+  right: 20px;
+}
+
+.toggle-btn-close {
+  transform: translateX(60px);
 }
 
 .mobile-navbar {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.404);
   text-align: center;
-  padding-top: 15px;
   overflow: hidden;
 }
 
@@ -45,17 +51,20 @@
   margin: 0 auto;
   /* padding: 15px 0; */
   border-radius: 7px;
-  transition: height 0.5s ease-in;
   overflow: hidden;
+  transition: height 0.5s ease-in;
+  transform: translateY(15px);
 }
 
 .mobile-navbar-opened ul {
   height: 285px;
+  /* transition: 0.2s all ease-in; */
 }
 
 .mobile-navbar-closed ul {
   height: 0;
   padding: 0;
+  /* transition: 1s all ease-in; */
 }
 
 .mobile-navbar ul li {
