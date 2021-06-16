@@ -37,10 +37,6 @@ const Navbar = () => {
         openBtn.current.style.display = "block";
       }
     }, 500);
-
-    setTimeout(() => {
-      mobileNavbar.current.style.display = "none";
-    }, 1500);
   }, [isNavbarOpened]);
 
   return (
@@ -48,18 +44,18 @@ const Navbar = () => {
       <div className="navbar-wrapper">
         <img src={logo} alt="logo" />
         <button
-          className="toggle-btn toggle-btn-open"
-          onClick={toggleNavbar}
-          ref={openBtn}
-        >
-          <img src={hamburgerIcon} alt="" />
-        </button>
-        <button
           className="toggle-btn toggle-btn-close"
           onClick={toggleNavbar}
           ref={closeBtn}
         >
           <img src={closeIcon} alt="" />
+        </button>
+        <button
+          className="toggle-btn toggle-btn-open"
+          onClick={toggleNavbar}
+          ref={openBtn}
+        >
+          <img src={hamburgerIcon} alt="" />
         </button>
       </div>
 
