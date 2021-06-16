@@ -1,0 +1,19 @@
+.request-btn {
+  height: 45px;
+  padding: 0 30px;
+  border-radius: 30px;
+  border: none;
+  color: white;
+  background: rgb(49, 211, 92);
+  background: linear-gradient(
+    90deg,
+    rgba(49, 211, 92, 1) 0%,
+    rgba(43, 183, 218, 1) 100%
+  );
+  cursor: pointer;
+}
+
+.request-btn:hover {
+  transform: scale(1.03);
+  transition: 0.3s transform;
+}

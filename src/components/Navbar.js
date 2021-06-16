@@ -1,5 +1,6 @@
 import React, { useRef, useState, useEffect } from "react";
 import "../css/navbar.css";
+import RequestBtn from "./RequestBtn";
 
 import logo from "../images/logo.svg";
 import hamburgerIcon from "../images/icon-hamburger.svg";
@@ -30,11 +31,20 @@ const Navbar = () => {
   useEffect(() => {
     setTimeout(() => {
       if (isNavbarOpened) {
-        openBtn.current.style.display = "none";
-        closeBtn.current.style.display = "block";
+        // openBtn.current.style.display = "none";
+        // closeBtn.current.style.display = "block";
+        openBtn.current.classList.add("display-none");
+        openBtn.current.classList.remove("display-block");
+        closeBtn.current.classList.add("display-block");
+        closeBtn.current.classList.remove("display-none");
+        // openBtn.src = { hamburgerIcon };
       } else {
-        closeBtn.current.style.display = "none";
-        openBtn.current.style.display = "block";
+        // closeBtn.current.style.display = "none";
+        // openBtn.current.style.display = "block";
+        openBtn.current.classList.remove("display-none");
+        openBtn.current.classList.add("display-block");
+        closeBtn.current.classList.remove("display-block");
+        closeBtn.current.classList.add("display-none");
       }
     }, 500);
   }, [isNavbarOpened]);
@@ -44,22 +54,42 @@ const Navbar = () => {
       <div className="navbar-wrapper">
         <img src={logo} alt="logo" />
         <button
-          className="toggle-btn toggle-btn-close"
+          className="toggle-btn toggle-btn-close mobile"
           onClick={toggleNavbar}
           ref={closeBtn}
         >
           <img src={closeIcon} alt="" />
         </button>
         <button
-          className="toggle-btn toggle-btn-open"
+          className="toggle-btn toggle-btn-open mobile"
           onClick={toggleNavbar}
           ref={openBtn}
         >
           <img src={hamburgerIcon} alt="" />
         </button>
+
+        <ul className="desktop-navbar-links desktop">
+          <li>
+            <a href="/#">Home</a>
+          </li>
+          <li>
+            <a href="/#">About</a>
+          </li>
+          <li>
+            <a href="/#">Contact</a>
+          </li>
+          <li>
+            <a href="/#">Blog</a>
+          </li>
+          <li>
+            <a href="/#">Carrers</a>
+          </li>
+        </ul>
+
+        <RequestBtn className="desktop" />
       </div>
 
-      <div className="mobile-navbar" ref={mobileNavbar}>
+      <div className="mobile-navbar mobile" ref={mobileNavbar}>
         <ul>
           <li>
             <a href="/#">Home</a>
