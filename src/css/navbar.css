@@ -1,6 +1,7 @@
 .navbar {
   overflow-x: hidden;
   width: 100vw;
+  z-index: 10;
 }
 
 .navbar-wrapper {
@@ -55,6 +56,7 @@
   position: absolute;
   left: 0;
   overflow-x: hidden;
+  z-index: 100;
 }
 
 .navbar-opened .mobile-navbar {
@@ -156,7 +158,7 @@
   transition: 0.25s padding-bottom;
 }
 
-.request-btn {
+.navbar .request-btn {
   display: none;
 }
 
@@ -175,7 +177,7 @@
     margin: 0 auto;
   }
 
-  .request-btn {
+  .navbar .request-btn {
     display: block;
   }
 }
