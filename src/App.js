@@ -2,10 +2,8 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import RequestBtn from "./components/RequestBtn";
 import Footer from "./components/Footer";
-import ScrollAnimation from "react-animate-on-scroll";
 
 import Bounce from "react-reveal/Zoom";
-import Fade from "react-reveal/Zoom";
 
 // reasons images
 import bankingIcon from "./images/icon-online.svg";
@@ -24,9 +22,7 @@ function App() {
     <div className="App">
       <Navbar />
       <div className="generation-part">
-        <Fade top>
-          <div className="img-part"></div>
-        </Fade>
+        <div className="img-part"></div>
         <div className="text-part">
           <h2>Next generation digital banking</h2>
           <p>
@@ -98,7 +94,7 @@ function App() {
         <div className="container">
           <Bounce right>
             <div className="article">
-              <img src={moneyImage} alt="picture of money" />
+              <img src={moneyImage} alt="money" />
               <div className="text-wrapper">
                 <p className="author">By Claire Robinson</p>
                 <a href="/#">Receive money in any currency with no fees</a>
@@ -112,7 +108,7 @@ function App() {
           </Bounce>
           <Bounce right>
             <div className="article">
-              <img src={restaurantImage} alt="picture of restaurant" />
+              <img src={restaurantImage} alt="restaurant" />
               <div className="text-wrapper">
                 <p className="author">By Wilson Hutton</p>
                 <a href="/#">Treat yourself without worrying about money</a>
@@ -125,7 +121,7 @@ function App() {
           </Bounce>
           <Bounce right>
             <div className="article">
-              <img src={airplaneImage} alt="picture of restaurant" />
+              <img src={airplaneImage} alt="restaurant" />
               <div className="text-wrapper">
                 <p className="author">By Wilson Hutton</p>
                 <a href="/#">Take your Easybank card wherever you go</a>
@@ -139,7 +135,7 @@ function App() {
           </Bounce>
           <Bounce right>
             <div className="article">
-              <img src={confettiImage} alt="picture of restaurant" />
+              <img src={confettiImage} alt="restaurant" />
               <div className="text-wrapper">
                 <p className="author">By Claire Robinson</p>
                 <a href="/#">Our invite-only Beta accounts are now live!</a>
