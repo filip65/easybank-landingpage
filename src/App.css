@@ -249,6 +249,7 @@ body {
   padding-bottom: 13px;
   text-decoration: none;
   display: inline-block;
+  width: 70%;
 }
 
 .articles-part a:hover {
@@ -298,6 +299,10 @@ body {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 30px;
+  }
+
+  .articles-part h3 {
+    font-size: 2rem;
   }
 }
 

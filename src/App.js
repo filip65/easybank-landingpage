@@ -1,6 +1,7 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
 import RequestBtn from "./components/RequestBtn";
+import Footer from "./components/Footer";
 
 // reasons images
 import bankingIcon from "./images/icon-online.svg";
@@ -127,6 +128,8 @@ function App() {
           </div>
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 }
