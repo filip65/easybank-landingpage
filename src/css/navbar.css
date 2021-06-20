@@ -4,6 +4,13 @@
   z-index: 10;
 }
 
+@media (min-width: 992px) {
+  .navbar {
+    position: relative;
+    z-index: 10;
+  }
+}
+
 .navbar-wrapper {
   width: 100vw;
   height: 65px;
@@ -50,7 +57,13 @@
   height: 100vh;
   width: 100vw;
   padding-top: 17px;
-  background-color: rgba(0, 0, 0, 0.383);
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(182, 183, 193, 1) 0%,
+    rgba(45, 49, 77, 0.842) 45%
+  );
   opacity: 0;
   transition: opacity 0.4s;
   position: absolute;
@@ -172,7 +185,7 @@
   }
 
   .navbar-wrapper {
-    width: 90%;
+    width: 85%;
     height: 80px;
     margin: 0 auto;
   }
