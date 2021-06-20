@@ -2,10 +2,17 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import RequestBtn from "./components/RequestBtn";
 
+// reasons images
 import bankingIcon from "./images/icon-online.svg";
 import budgetingIcon from "./images/icon-budgeting.svg";
 import onBoardingIcon from "./images/icon-onboarding.svg";
 import APIIcon from "./images/icon-api.svg";
+
+// articles images
+import moneyImage from "./images/image-currency.jpg";
+import restaurantImage from "./images/image-restaurant.jpg";
+import airplaneImage from "./images/image-plane.jpg";
+import confettiImage from "./images/image-confetti.jpg";
 
 function App() {
   return (
@@ -64,6 +71,57 @@ function App() {
               <p>
                 Manage your savings, investments, pension, and much more from
                 one account. Tracking your money has never been easier.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="articles-part">
+        <h3>Latest Articles</h3>
+        <div className="container">
+          <div className="article">
+            <img src={moneyImage} alt="picture of money" />
+            <div className="text-wrapper">
+              <p className="author">By Claire Robinson</p>
+              <a href="/#">Receive money in any currency with no fees</a>
+              <p>
+                The world is getting smaller and we’re becoming more mobile. So
+                why should you be forced to only receive money in a single …
+              </p>
+            </div>
+          </div>
+          <div className="article">
+            <img src={restaurantImage} alt="picture of restaurant" />
+            <div className="text-wrapper">
+              <p className="author">By Wilson Hutton</p>
+              <a href="/#">Treat yourself without worrying about money</a>
+              <p>
+                Our simple budgeting feature allows you to separate out your
+                spending and set realistic limits each month. That means you …
+              </p>
+            </div>
+          </div>
+
+          <div className="article">
+            <img src={airplaneImage} alt="picture of restaurant" />
+            <div className="text-wrapper">
+              <p className="author">By Wilson Hutton</p>
+              <a href="/#">Take your Easybank card wherever you go</a>
+              <p>
+                We want you to enjoy your travels. This is why we don’t charge
+                any fees on purchases while you’re abroad. We’ll even show you …
+              </p>
+            </div>
+          </div>
+
+          <div className="article">
+            <img src={confettiImage} alt="picture of restaurant" />
+            <div className="text-wrapper">
+              <p className="author">By Claire Robinson</p>
+              <a href="/#">Our invite-only Beta accounts are now live!</a>
+              <p>
+                Our simple budgeting feature allows you to separate out your
+                spending and set realistic limits each month. That means you …
               </p>
             </div>
           </div>
