@@ -92,60 +92,53 @@ function App() {
       <div className="articles-part">
         <h3>Latest Articles</h3>
         <div className="container">
-          <Bounce right>
-            <div className="article">
-              <img src={moneyImage} alt="money" />
-              <div className="text-wrapper">
-                <p className="author">By Claire Robinson</p>
-                <a href="/#">Receive money in any currency with no fees</a>
-                <p>
-                  The world is getting smaller and we’re becoming more mobile.
-                  So why should you be forced to only receive money in a single
-                  …
-                </p>
-              </div>
+          <div className="article">
+            <img src={moneyImage} alt="money" />
+            <div className="text-wrapper">
+              <p className="author">By Claire Robinson</p>
+              <a href="/#">Receive money in any currency with no fees</a>
+              <p>
+                The world is getting smaller and we’re becoming more mobile. So
+                why should you be forced to only receive money in a single …
+              </p>
             </div>
-          </Bounce>
-          <Bounce right>
-            <div className="article">
-              <img src={restaurantImage} alt="restaurant" />
-              <div className="text-wrapper">
-                <p className="author">By Wilson Hutton</p>
-                <a href="/#">Treat yourself without worrying about money</a>
-                <p>
-                  Our simple budgeting feature allows you to separate out your
-                  spending and set realistic limits each month. That means you …
-                </p>
-              </div>
+          </div>
+
+          <div className="article">
+            <img src={restaurantImage} alt="restaurant" />
+            <div className="text-wrapper">
+              <p className="author">By Wilson Hutton</p>
+              <a href="/#">Treat yourself without worrying about money</a>
+              <p>
+                Our simple budgeting feature allows you to separate out your
+                spending and set realistic limits each month. That means you …
+              </p>
             </div>
-          </Bounce>
-          <Bounce right>
-            <div className="article">
-              <img src={airplaneImage} alt="restaurant" />
-              <div className="text-wrapper">
-                <p className="author">By Wilson Hutton</p>
-                <a href="/#">Take your Easybank card wherever you go</a>
-                <p>
-                  We want you to enjoy your travels. This is why we don’t charge
-                  any fees on purchases while you’re abroad. We’ll even show you
-                  …
-                </p>
-              </div>
+          </div>
+
+          <div className="article">
+            <img src={airplaneImage} alt="restaurant" />
+            <div className="text-wrapper">
+              <p className="author">By Wilson Hutton</p>
+              <a href="/#">Take your Easybank card wherever you go</a>
+              <p>
+                We want you to enjoy your travels. This is why we don’t charge
+                any fees on purchases while you’re abroad. We’ll even show you …
+              </p>
             </div>
-          </Bounce>
-          <Bounce right>
-            <div className="article">
-              <img src={confettiImage} alt="restaurant" />
-              <div className="text-wrapper">
-                <p className="author">By Claire Robinson</p>
-                <a href="/#">Our invite-only Beta accounts are now live!</a>
-                <p>
-                  Our simple budgeting feature allows you to separate out your
-                  spending and set realistic limits each month. That means you …
-                </p>
-              </div>
+          </div>
+
+          <div className="article">
+            <img src={confettiImage} alt="restaurant" />
+            <div className="text-wrapper">
+              <p className="author">By Claire Robinson</p>
+              <a href="/#">Our invite-only Beta accounts are now live!</a>
+              <p>
+                Our simple budgeting feature allows you to separate out your
+                spending and set realistic limits each month. That means you …
+              </p>
             </div>
-          </Bounce>
+          </div>
         </div>
       </div>
 
